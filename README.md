@@ -3,9 +3,9 @@
 **Scan a clothing tag, see its real environmental impact, swap to something cheaper and greener, and earn GreenPoints.**
 
 Live app: **add your Streamlit link here** · Design document: [FA-1 submission](docs/FA1_Submission.docx)
-Team: ____________ · Course: Critical and Creative Thinking (CRS), Formative Assessment 2
+· Course: Critical and Creative Thinking (CRS), Formative Assessment 2
 
-![SustainStyle screens](docs/screens.png)
+
 
 ## What the app does
 SustainStyle is a mobile-first web app for shoppers who want to buy better clothes without paying more. The shopper scans a barcode or care label and gets an instant 0 to 100 eco-score with an A to E grade, a traffic-light verdict and a breakdown by materials, carbon, water and labour. If the item scores badly, the app suggests second-hand, repair or organic options that score higher, and shows how much money, water and CO₂ each swap saves. Every scan, swap and skipped purchase earns GreenPoints, which build streaks, levels and badges and can be spent on vouchers.
@@ -50,29 +50,9 @@ This app is the working prototype of the concept designed in [FA-1](docs/FA1_Sub
 - **GreenPoints:** levels (Seedling to Planet Hero, based on lifetime points), streak tracker, weekly chart, six badges, 30-wear challenge, rewards store, sample leaderboard
 - **Profile:** Eco Impact Score share card, outfit ideas, closet, settings
 
-## Project structure
-```
-app.py                  the whole app (data, scoring engine, styling, six screens plus profile)
-requirements.txt        streamlit>=1.52
-.streamlit/config.toml  theme
-docs/FA1_Submission.docx   FA-1 research, ideation and storyboard
-docs/screens.png        screenshots used above
-```
-
-## Run locally
-```
-pip install -r requirements.txt
-streamlit run app.py
-```
-
-## Deploy on Streamlit Community Cloud
-1. Push this repo to GitHub (public).
-2. Go to [share.streamlit.io](https://share.streamlit.io), sign in with GitHub and choose **Create app**.
-3. Pick this repo, branch `main`, main file `app.py`, then **Deploy**.
-4. Paste the live link at the top of this README.
 
 ## Tools
-Python and Streamlit. Built with assistance from Claude (Anthropic's AI assistant) for code and design; the concept, research and storyboard come from FA-1.
+Python and Streamlit. Built with assistance from Claude (Anthropic's AI assistant) for code.
 
 ## References
 - Zalando (2025). Attitude-Behaviour Gap Report 2025. https://corporate.zalando.com/en/node/10765
