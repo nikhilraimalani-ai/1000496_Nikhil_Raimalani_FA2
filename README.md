@@ -3,9 +3,9 @@
 **Scan a clothing tag, see its environmental impact, swap to something cheaper and greener, and earn GreenPoints.**
 
 Live app: **add your Streamlit link here** · Design document: [FA-1 submission](docs/FA1_Submission.docx)
-Team: ____________ · Course: Critical and Creative Thinking (CRS), Formative Assessment 2
+Course: Critical and Creative Thinking (CRS), Formative Assessment 2
 
-![SustainStyle screens](docs/screens.png)
+
 
 ## What the app does
 SustainStyle is a mobile-first web app for shoppers who want to buy better clothes without paying more. The shopper scans a tag (barcode, typed code, search or camera) and gets a 0 to 100 eco-score with an A to E grade, a traffic-light verdict and a breakdown by materials, carbon, water and labour. If the item scores badly, the app lists second-hand, repair or organic options that score higher and fit the shopper's size, style and budget, and shows the money, water and CO₂ each swap saves. Scans, swaps and skipped purchases earn GreenPoints, which build streaks, levels and badges and can be redeemed for rewards. Two items can be compared side by side. The interface is available in English and Hindi.
@@ -44,36 +44,7 @@ carbon factor = 100 − 4 × kg CO₂e (25 kg or more = 0); water factor = 100 �
 Grades: A 85+, B 70+, C 55+, D 30+, E below. Green for A and B, amber for C, red for D and E.
 Levels and badges use lifetime points, so redeeming rewards never lowers your level.
 
-## Project structure
-```
-app.py                   entry point: page setup, router, bottom navigation
-sustainstyle/
-  scoring.py             eco-score maths
-  catalog.py             22 products, rewards, levels, preference matching
-  game.py                points, streaks, badges, rewards (all derived from an event log)
-  state.py  actions.py   session state, navigation, button callbacks
-  i18n.py  strings.py    English and Hindi text
-  theme.py  components.py   CSS and HTML builders (all user text escaped)
-  report.py              CSV export
-  pages/                 home, scan, result, alts, compare, reward, impact, profile
-tests/                   94 tests: maths, game rules, i18n coverage, HTML safety, end-to-end flows
-docs/FA1_Submission.docx FA-1 research, ideation and storyboard
-```
 
-## Run and test
-```
-pip install -r requirements.txt
-streamlit run app.py
-pip install -r requirements-dev.txt && pytest
-```
-
-## Deploy on Streamlit Community Cloud
-1. Push this repo to GitHub (public).
-2. At [share.streamlit.io](https://share.streamlit.io) choose **Create app**, pick the repo, branch `main`, main file `app.py`, then **Deploy**.
-3. Paste the live link at the top of this README.
-
-## Tools
-Python and Streamlit. Built with assistance from Claude (Anthropic's AI assistant) for code and design; the concept, research and storyboard come from FA-1.
 
 ## References
 - Zalando (2025). Attitude-Behaviour Gap Report 2025. https://corporate.zalando.com/en/node/10765
