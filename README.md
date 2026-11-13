@@ -30,13 +30,6 @@ This app is the working prototype of the concept in [FA-1](docs/FA1_Submission.d
 | 6 My Impact | Impact: weekly chart, streak, challenge, badges, rewards, community |
 | Customize | Profile: name, language, size, shoe size, style, budget, larger text, reduce motion |
 
-## What the prototype does not do (limits)
-- **Scanning is simulated.** Items are matched from a built-in catalogue. A camera photo is not analysed; the selected sample item is used.
-- **Data is illustrative.** The 22 products and their carbon, water and labour figures are made up for the demo.
-- **"Recommendations" are rule-based.** Same category, higher score, ranked by price then score. No machine learning.
-- **Hindi covers the interface only.** Product names, brands and certifications stay in English.
-- **No accounts or storage.** Progress lives in the browser session and resets on refresh.
-- **Demo starting data.** The app opens with sample history, closet and friends so every screen has content. It is labelled on screen; *Profile → Clear demo data* resets to zero.
 
 ## Eco-score
 `score = 0.35 × materials + 0.25 × carbon + 0.25 × water + 0.15 × labour`
